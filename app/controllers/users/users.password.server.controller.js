@@ -11,7 +11,11 @@ var _ = require('lodash'),
 	config = require('../../../config/config'),
 	nodemailer = require('nodemailer'),
 	async = require('async'),
-	crypto = require('crypto');
+	crypto = require('crypto'),
+	Promise = require('bluebird');
+
+	Promise.promisifyAll(User);
+	Promise.promisifyAll(User.prototype);
 
 /**
  * Forgot for reset password (forgot POST)

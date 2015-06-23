@@ -7,7 +7,14 @@ var _ = require('lodash'),
 	errorHandler = require('../errors.server.controller'),
 	mongoose = require('mongoose'),
 	passport = require('passport'),
-	User = mongoose.model('User');
+	User = mongoose.model('User'),
+	Household = mongoose.model('Household'),
+	Promise = require('bluebird');
+
+	Promise.promisifyAll(User);
+	Promise.promisifyAll(User.prototype);
+	Promise.promisifyAll(Household);
+	Promise.promisifyAll(Household.prototype);
 
 /**
  * Signup

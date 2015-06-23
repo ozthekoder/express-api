@@ -5,7 +5,11 @@
  */
 var _ = require('lodash'),
 	mongoose = require('mongoose'),
-	User = mongoose.model('User');
+	User = mongoose.model('User'),
+	Promise = require('bluebird');
+
+	Promise.promisifyAll(User);
+	Promise.promisifyAll(User.prototype);
 
 /**
  * User middleware

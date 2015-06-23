@@ -6,8 +6,8 @@ module.exports = {
 		title: 'express-api - Development Environment'
 	},
 	facebook: {
-		clientID: process.env.FACEBOOK_ID || 'APP_ID',
-		clientSecret: process.env.FACEBOOK_SECRET || 'APP_SECRET',
+		clientID: process.env.FACEBOOK_ID || '871320572951882',
+		clientSecret: process.env.FACEBOOK_SECRET || '7e6fa5373116eb2496d439c64af598ce',
 		callbackURL: '/auth/facebook/callback'
 	},
 	twitter: {
@@ -16,8 +16,8 @@ module.exports = {
 		callbackURL: '/auth/twitter/callback'
 	},
 	google: {
-		clientID: process.env.GOOGLE_ID || 'APP_ID',
-		clientSecret: process.env.GOOGLE_SECRET || 'APP_SECRET',
+		clientID: process.env.GOOGLE_ID || '415075512227-med8sv1c7cg5ah2f9j2ui0fhgiakdbm9.apps.googleusercontent.com',
+		clientSecret: process.env.GOOGLE_SECRET || 'Z_YOMsbtj7p8V8fMSyhrbxsk',
 		callbackURL: '/auth/google/callback'
 	},
 	linkedin: {
@@ -26,8 +26,8 @@ module.exports = {
 		callbackURL: '/auth/linkedin/callback'
 	},
 	github: {
-		clientID: process.env.GITHUB_ID || 'APP_ID',
-		clientSecret: process.env.GITHUB_SECRET || 'APP_SECRET',
+		clientID: process.env.GITHUB_ID || '7a6dd1df78a1f9d9765a',
+		clientSecret: process.env.GITHUB_SECRET || '987bf7be3611000bbdadb9495297bf2eac2ea522',
 		callbackURL: '/auth/github/callback'
 	},
 	mailer: {
